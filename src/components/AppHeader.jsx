@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function AppHeader() {
+export const AppHeader = () => {
   return (
     <header className="bg-white">
       <nav
@@ -75,7 +75,7 @@ export default function AppHeader() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end ">
           <a
             href="#"
-            className="text-sm font-semibold leading-6 rounded bg-primary px-3 py-1 text-white hover:text-gray-200 hover:bg-secondary font-primary"
+            className="text-sm font-semibold leading-6 rounded  bg-primary px-3 py-1 text-white hover:text-gray-200 hover:bg-secondary font-primary"
           >
             Log in <span aria-hidden="true">&rarr;</span>
           </a>
@@ -216,4 +216,4 @@ export default function AppHeader() {
       </div>
     </header>
   );
-}
+};

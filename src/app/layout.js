@@ -1,5 +1,5 @@
-import AppFooter from "@/components/AppFooter";
-import AppHeader from "@/components/AppHeader";
+
+import { AppFooter, AppHeader } from "@/components";
 import "./globals.css";
 
 

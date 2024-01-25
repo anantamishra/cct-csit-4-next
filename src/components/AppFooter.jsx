@@ -1,7 +1,13 @@
-import React from 'react'
+import { HomeIcon, MenuIcon } from "@/icons";
+import React from "react";
 
-export default function AppFooter() {
+export const AppFooter = () => {
   return (
-    <div>AppFooter</div>
-  )
-}
+    <div>
+      <div className="h-24 w-24">
+        <HomeIcon />
+      </div>
+      <div className="h-24 w-24">{MenuIcon}</div>
+    </div>
+  );
+};

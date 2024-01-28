@@ -5,5 +5,5 @@ export * from './Contact'
 export * from './Experiences'
 export * from './HeroSection'
 export * from './Skills'
-export * from '/Projects'
+export * from './Projects'
 

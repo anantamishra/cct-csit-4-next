@@ -43,7 +43,7 @@ export default function FormPage() {
         </button>
       </div>
       <p className="text-xl font-bold text-blue-500">
-        Your name is {firstName} {lastName}
+        Your name is {firstName + " " + lastName}
       </p>
     </form>
   );

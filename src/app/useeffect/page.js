@@ -1,22 +1,21 @@
 'use client'
-
-import { useEffect } from "react"
+import React, { useEffect, useState } from 'react';
 
 export default function Page() {
-    useEffect(() => {
-        console.log("timely loaded")
-    },)
+    const [value, setValue] = useState(0)
 
     useEffect(() => {
-        console.log("timely loaded on component mount")
-    }, [])
+        console.log('Component mounted');
+        console.log(value)
+    }, [value]);
 
-    useEffect((argument) => {
-        console.log("argument passed")
-    }, [argument])
+    const handleSubmit = () => {
+        setValue(value + 1)
+    };
 
     return (
-        <div>Use of Use Effect
+        <div className='flex w-full min-h-screen justify-center items-center'>
+            <button onClick={handleSubmit} className='bg-blue-500 px-5 py-3 text-white'>Submit</button>
         </div>
-    )
+    );
 }
